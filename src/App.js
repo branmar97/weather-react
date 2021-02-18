@@ -15,8 +15,16 @@ function App() {
             placeholder='Search...'
           />
         </div>
+
+        <div>
+          <div className='location-box'>
+            <div className='location'>New York City, USA</div>
+            <div className='date'>{dateBuilder(new(Date()))}</div>
+          </div>
+        </div>
       </main>
     </div>
+    
   );
 }
 
