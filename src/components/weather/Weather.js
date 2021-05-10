@@ -1,3 +1,4 @@
+import Form from '../form/Form.js'
 import { useEffect, useState } from 'react';
 import './Weather.css';
 
@@ -17,7 +18,9 @@ const Weather = () => {
         }
     );
 
-    return <div></div>
+    return <div>
+        <Form setZip={setZip} />
+    </div>
 }
 
 export default Weather;
