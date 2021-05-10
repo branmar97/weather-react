@@ -3,6 +3,7 @@ import './Weather.css';
 
 const Weather = () => {
     const [zip, setZip] = useState('23608')
+    const [weather, setWeather] = useState({})
 
     useEffect(
         () => {
@@ -11,7 +12,7 @@ const Weather = () => {
                 return response.json()
             })
             .then(data => {
-                return data.main
+                setWeather(data.main)
             })
         }
     );
