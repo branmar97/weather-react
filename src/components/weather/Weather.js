@@ -1,4 +1,5 @@
-import Form from '../form/Form.js'
+import Form from '../form/Form.js';
+import Card from '../card/Card.js';
 import { useEffect, useState } from 'react';
 import './Weather.css';
 
@@ -19,9 +20,12 @@ const Weather = () => {
         [zip]
     );
 
-    return <div>
-        <Form setZip={setZip} />
-    </div>
+    return (
+        <div>
+            <Form setZip={setZip} />
+            <Card weather={weather} />
+        </div>
+    )
 }
 
 export default Weather;
