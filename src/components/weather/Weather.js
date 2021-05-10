@@ -15,7 +15,8 @@ const Weather = () => {
             .then(data => {
                 setWeather(data.main)
             })
-        }
+        },
+        [zip]
     );
 
     return <div>
