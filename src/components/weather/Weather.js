@@ -1,7 +1,6 @@
 import Form from '../form/Form.js';
 import Card from '../card/Card.js';
 import { useEffect, useState } from 'react';
-import './Weather.css';
 
 const Weather = () => {
     const [zip, setZip] = useState('23608');
