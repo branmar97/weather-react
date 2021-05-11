@@ -22,9 +22,11 @@ const Weather = () => {
     );
 
     return (
-        <div>
-            <Form setZip={setZip} />
-            {loading ? <p>Loading...</p> : <Card data={weather} zipcode={zip} />}
+        <div className="mx-auto text-center">
+            <div className="mx-auto max-w-md mt-16 mb-16 pt-20 pb-20 shadow-xl border-black bg-gradient-to-b from-blue-400 to-blue-200">
+                <Form setZip={setZip} />
+                {loading ? <h2 className="text-xl text-white">Loading...</h2> : <Card data={weather} zipcode={zip} />}
+            </div>
         </div>
     )
 }
