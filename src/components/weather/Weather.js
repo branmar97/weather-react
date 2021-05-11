@@ -22,10 +22,6 @@ const Weather = () => {
         [zip]
     );
 
-    const renderCard = () => {
-
-    }
-
     return (
         <div>
             <Form setZip={setZip} />
