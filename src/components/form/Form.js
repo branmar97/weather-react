@@ -12,7 +12,7 @@ const Form = ({ setZip }) => {
         <div>
             <form className="mx-auto w-80 flex justify-between" onSubmit={onSubmit}> 
                 <div>
-                <input className="appearance-none border border-gray-400 py-0.5 px-5 focus:outline-none focus:border-blue-500 text-black mb-6" type="number" value={input} onChange={(e) => setInput(e.target.value)} />
+                <input className="appearance-none border border-gray-400 py-0.5 px-5 focus:outline-none focus:border-blue-500 text-black mb-6" type="number" value={input} placeholder="Enter Zipcode" onChange={(e) => setInput(e.target.value)} />
                 </div>
 
                 <div>
