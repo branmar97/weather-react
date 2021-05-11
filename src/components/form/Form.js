@@ -3,7 +3,8 @@ import { useState } from "react";
 const Form = ({ setZip }) => {
     const [input, setInput] = useState("")
 
-    const onSubmit = () => {
+    const onSubmit = (e) => {
+        e.preventDefault()
         setZip(input)
     }
 
